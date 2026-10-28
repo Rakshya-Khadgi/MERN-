@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symentic tags in html</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: burlywood;
+            padding: 0 10px;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- nav bar -->
+    <!-- non semantic
+      <div></div> -->
+
+    <!-- semantic
+       header
+       footer -->
+
+
+
+    <!-- Navigation bar using div -->
+    <div>
+        <h3>Logo</h3>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <h1>footer</h1>
+    </div>
+
+    <!-- there are too many div so the coder may not know what the div is using for eg: div use for navbar, img , header, footer etc -->
+    <!-- replacing div with nav so the coder can easily understand it is use for navbar -->
+
+    <!-- using only div cannot optimize SEO -->
+
+    <header>
+        <nav>
+            <h1>Logo</h1>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            This is about page/section
+        </section>
+        This is about home/section
+        <section>
+
+        </section>
+    </main>
+
+    <footer>
+        This is a footer
+    </footer>
+
+    <!--  structure  (Sementic tags) -->
+
+
+    <header>
+        <nav></nav>
+    </header>
+
+    <!-- aside -> side ko kura haruu eg, sidebar -->
+    <aside></aside>
+    <main>
+
+        <!-- article to show small details or things like showing things in card -->
+        <article></article>
+        <figure></figure>
+        <p></p>
+        <section></section>
+    </main>
+    <footer>
+        <!-- can use div/span/p/h1 ... incase  -->
+        <div></div>
+        <p><span></span></p>
+        <h1></h1>
+    </footer>
