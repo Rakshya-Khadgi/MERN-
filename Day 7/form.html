@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html</title>
+
+    <style>
+        label {
+            color: rgb(167, 112, 112);
+        }
+        
+        h2 {
+            color: rgb(55, 25, 25);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- action -> where to redirect -->
+
+    <h2>Form</h2>
+    <form action="/Day 7/redirect.html">
+        <!-- first name, last name, phone number, email -->
+        <!-- type -> text (both number and text), number (only number). password(hides text)-->
+        <!-- value od id and for should be same to point in textbox while clicking text name... -->
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" placeholder="Your first name" required>
+        <br><br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" placeholder="Your Last Name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your email" required>
+
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Your password" required>
+        <br><br>
+        <!-- here if value of name is same then it selects only one option but if the value of name is different then it selects multiple options -->
+        <label for="gender">Gender:</label>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        <label for="others">Others</label>
+        <input type="radio" name="gender" id="others">
+
+
+        <br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+        <br><br>
+        <label for="time">Time:</label>
+        <input type="time" id="time">
+        <br><br>
+        <label for="range">Range:</label>
+        <input type="range" value="10" id="range">
+        <br><br>
+
+        <label for="">Subjects:</label>
+        <br>
+        <label for="database">Database</label>
+        <input type="checkbox" id="database">
+        <label for="math">Mathematics</label>
+        <input type="checkbox" id="math">
+        <label for="js">javascript</label>
+        <input type="checkbox" id="js">
+
+        <br><br>
+
+        <!-- Description -->
+        <label for="message">Message:</label>
+        <br>
+        <textarea name=" " id="message" placeholder="Enter Your Messages.... " rows="5 " cols="25 "></textarea>
+        <br><br>
+        <!-- Dropdown -->
+        <label for=" ">Country:</label>
+        <select name=" " id=" ">
+<option value="nepal ">Nepal</option>
+<option value="us ">US</option>
+<option value="japan ">Japan</option>
+<option value="korea ">Korea</option>
+</select>
+        <br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+
+</html>
