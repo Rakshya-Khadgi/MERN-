@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Day 8</title>
+
+    <!-- In comment for external CSS  -->
+    <!-- <style>
+        h1 {
+            color: rgb(156, 156, 202);
+            background-color: rgb(42, 10, 10);
+        }
+        
+        p {
+            color: rgb(70, 88, 34);
+        }
+        
+        .first {
+            color: rgb(218, 127, 127);
+            background-color: #fff;
+        }
+    </style> -->
+    <!-- Link for External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- CSS -> Cascading Style Sheet  (Used for styling)
+1. Inline CSS (In same line), Multiple line of code
+2. Internal CSS 
+     -> Reduce Multiple line of code
+     -> Reduce duplicate styling in similar elements
+3. External CSS
+ -->
+
+    <!-- Inline CSS -->
+    1. Inline CSS:
+    <h1 style="color:chocolate; background-color: black;">This is Heading</h1>
+
+    <!-- Shortcut for background-color   -> bgc (enter)-->
+    <p style="background-color:bisque;">This is Paragraph....</p>
+
+
+    <div style="color:chocolate; background-color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, aut molestiae eum omnis nostrum tempora exercitationem voluptatem harum quos magni.</div>
+
+
+    <br>
+
+    <div style="color:chocolate">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, quasi.</div>
+    <br>
+    <!-- Internal CSS -->
+    2. Internal CSS:
+    <h1>Internal CSS</h1>
+    <p>Reduce Multiple line of code -> Reduce duplicatestyling in similar elements</p>
+    <!-- when we have two h1 and wants to give style to only one h1 then we use id and class. -->
+    <h1 class="first">Styling using id and class</h1>
+</body>
+
+</html>
