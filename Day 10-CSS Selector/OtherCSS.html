@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 - Other CSS</title>
+    <style>
+        /* Child Selector */
+        
+        div>p {
+            color: hotpink;
+        }
+        
+        div>h1 {
+            color: rgb(234, 24, 24);
+            background-color: pink;
+            ;
+        }
+        /* Descendent Selector */
+        
+        div h5 p {
+            color: rgb(32, 79, 32);
+        }
+        /* to only select p which is located inside nested div we have to use child selector instead of descendent  */
+        
+        div>h5>div>p {
+            color: rgb(57, 2, 44);
+        }
+        
+        div h5 div a {
+            color: rgb(17, 17, 220);
+        }
+        /* Or simply use a{} */
+    </style>
+</head>
+
+<body>
+
+
+    <!-- h1 or heading shouldnot be inside paragraph(p) tag.. -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ipsa.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <h1>Heading1</h1>
+
+        <h5>
+            <p>Lorem ipsum dolor sit amet. </p>
+
+            <div>
+                <p>hello</p>
+                <a href="">I am a Link</a>
+            </div>
+        </h5>
+
+    </div>
+</body>
+
+</html>
