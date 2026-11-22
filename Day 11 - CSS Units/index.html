@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <style>
+        /* pixel -> small components */
+        /* 16 px is a by default pixel */
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .box {
+            color: white;
+            background-color: red;
+            /* Pixel for fixed unit */
+            /* height: 1000px;
+            width: 500px; */
+            /* vh,vw for responsiveness (min 0, max 100)    Screen anusar width ra height display garxaa*/
+            /* vw -> viewport width
+               vh -> viewport height */
+            /* width: 90vw;
+            height: 90vh; */
+            /* Percentage(%) */
+            /* incase of width (%=vw), incase of height  (vh!=%) */
+            /* % ma parent ko height ra width bata child le height ra width linxa  */
+            width: 50%;
+            height: 50%;
+            margin-bottom: 20px;
+        }
+        
+        .parent {
+            background-color: green;
+            height: 50vh;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .child {
+            background-color: yellow;
+            width: 50%;
+            height: 50%;
+        }
+        /* Related to font size */
+        /* rem  -> root element(html) ko font-size sanga relative hunxaa (defined from the font-size of root element)    e.g: if html have 40px then it is calculated as 2 rem = 2*40,   3 rem = 3*40
+em -> it is always relative to its container   element  (Afno container ma vakoo font_size matrai herxaa*/
+        
+        .container {
+            background-color: aqua;
+            width: 60vw;
+            height: 60vh;
+            /* bydefault is 16px soo 2 rem means 2*16,   3 rem=3*16
+16px=1rem
+32px=2rem
+48px=3rem
+(if html have 40px as font-size i.e,(html{font-size:40px;}) then it is calculated as 2 rem = 2*40,   3 rem = 3*40) */
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .em {
+            background-color: rgb(5, 48, 48);
+            width: 40vw;
+            height: 20vh;
+            font-size: 5px;
+        }
+        
+        p {
+            font-size: 4em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Box</div>
+
+    <div class="parent">
+        <div class="child">box2
+        </div>
+    </div>
+
+
+    <div class="container">Container</div>
+
+
+
+    <div class="em">
+        <p>Em CSS UNIT</p>
+    </div>
+</body>
+
+</html>
+
+</html>

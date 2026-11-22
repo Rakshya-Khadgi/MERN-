@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <!-- Pixel -> fixed size -->
+    <style>
+        .container {
+            background-color: red;
+            height: 1000px;
+            width: 500px;
+        }
+        /* for responsiveness (vw,vh) */
+        /* vw-> viewport width, vh->viewport height
+         vw,vh -> max 100vw and 100vh*/
+        
+        .res {
+            background-color: blue;
+            height: 100vh;
+            width: 80vw;
+        }
+        
+        .parent {
+            background-color: rgb(34, 69, 58);
+            height: 70vh;
+            width: 70vw;
+            padding: 20px;
+        }
+        /* % le parents to height ra width ko anusar size  linxa if parents ko full width 500 xa vani child le 500 bata % linxaa */
+        /* whereas vw,
+        vh le chaii full screen bata size linxaa */
+        /* here, width 70vw ra height 70vh ko 50% */
+        
+        .child {
+            background-color: rgb(136, 136, 105);
+            height: 50%;
+            width: 50%;
+            /* height: 50vh;
+            width: 50vw; */
+        }
+        /* rem */
+        /* bydefault 16px */
+        /*if html is of 20 px font size then it will be 20*2 not 16* rem    
+  but if root element(html) is not mentioned then it will be bydefault 16*2*/
+        /* html {
+            font-size: 20px;
+        } */
+        
+        p {
+            /*  16*2=32px */
+            font-size: 2rem;
+            color: rgb(81, 9, 9);
+        }
+        /* em */
+        /* if parent is not given then bydefault 16 */
+        
+        div {
+            font-size: 10px;
+        }
+        
+        h1 {
+            /* here 10*2 */
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- type .container to create div class with class container -->
+
+    <!-- Pixel(fixed // same screen size in all device) -->
+
+
+    <!-- <div class="container"></div> -->
+
+
+    <!-- vw,vh(for Responsiveness  /  changes size according to device screen) -->
+
+
+    <!-- <div class="res"></div> -->
+
+
+
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+
+    <!-- rem and em -->
+    <!-- rem is always relative with the root element font size -->
+    <!-- em is always relative to its container or element -->
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+
+    <div>
+        <!-- p.para  -> creates paragraph with para class -->
+        <h1 class="para">This is heading
+        </h1>
+    </div>
+</body>
+
+</html>
