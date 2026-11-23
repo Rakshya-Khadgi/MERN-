@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Block in CSS</title>
+
+
+    <style>
+        /* div takes the width of whole screen(block) */
+        /* if we want to make it inline then (display:inline;) */
+        
+        div {
+            background-color: rgb(214, 195, 195);
+            display: inline;
+            /* if display is inline then there is no use of height and width   ( height and width is applicable only if the display is block) */
+            height: 100px;
+            width: 100px;
+        }
+        /* span takes width it carries(inline) */
+        /* if we want to make it block then (display:block;) */
+        
+        span {
+            background-color: greenyellow;
+            display: block;
+        }
+        
+        h1 {
+            background-color: red;
+            display: inline;
+        }
+        
+        .circle {
+            height: 30px;
+            width: 30px;
+            background-color: red;
+            border-radius: 50%;
+            /* height ra width lageko vayera inline-block */
+            display: inline-block;
+            /* border-radius  -> 50% for perfect circle */
+        }
+    </style>
+
+
+    <!-- (display:inline-block;)  is the mixture of block and inline properties   (can arrange height/width(block/div feature)   and the content width(inline/span feature)) -->
+</head>
+<!-- bydefault display
+div  -> block
+span -> inline
+  -->
+
+
+<!-- div ma inline garyo vani 2 ta content eutai line (sangai) aauxa  -->
+
+<body>
+
+    <!--div  ->  block element(means it takes total width of the whole page) -->
+    <div>Hi</div>
+
+
+    <!-- span  -> inline element( means it takes the actual content width only) -->
+    <span>Hello</span>
+
+
+
+
+
+    <h4>Example of Display Block:</h4>
+
+    <h1>Nature Image</h1>
+    <div class="circle"></div>
+
+</body>
+
+</html>
