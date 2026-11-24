@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+
+    <style>
+        .container {
+            height: 150vh;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;
+            position: relative;
+        }
+        
+        .box {
+            height: 100px;
+            width: 80%;
+            background-color: khaki;
+            margin-top: 10px;
+        }
+        /* position: absolute */
+        /* absolute can freely move wherever they want */
+        
+        .box1 {
+            width: 100px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        
+        .box2 {
+            background-color: rgb(236, 130, 17);
+            position: relative;
+            /* position relative is necessary to work top/left/right/bottom...... */
+            /* -30px is used inversely (like it will move to bottom  instead of top if we use -30px) */
+            /* negative top = positive bottom and vice versa */
+            /* top: -30px;
+            left: 20px; */
+            /* bottom: 10px;
+            right: 30px; */
+        }
+        
+        .box3 {
+            background-color: rgb(121, 116, 69);
+        }
+        
+        .box4 {
+            background-color: rgb(161, 155, 103);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Position:
+1. Relative
+2. Absolute
+3. Fixed
+4. Sticky -->
+    <!-- two class to give common feature -->
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
